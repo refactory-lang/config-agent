@@ -1,0 +1,4 @@
+#!/bin/sh
+# Auto-init submodules after clone or checkout
+# This fires after `git clone` (implicit checkout) and `git checkout`
+git submodule update --init --recursive 2>/dev/null || true
